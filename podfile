@@ -1,0 +1,4 @@
+target 'sqliteDemo' do
+pod 'FMDB'
+end
+

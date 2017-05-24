@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290DD706BE8343927CE08616 /* libPods-sqliteDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 580325613C93DB9331CC3FEE /* libPods-sqliteDemo.a */; };
 		D87B2ADF1ED3E5E1007FB992 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D87B2ADE1ED3E5E1007FB992 /* main.m */; };
 		D87B2AE21ED3E5E1007FB992 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D87B2AE11ED3E5E1007FB992 /* AppDelegate.m */; };
 		D87B2AE51ED3E5E1007FB992 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87B2AE41ED3E5E1007FB992 /* ViewController.m */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A4388218809B1C19F54D405 /* Pods-sqliteDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sqliteDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sqliteDemo/Pods-sqliteDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		580325613C93DB9331CC3FEE /* libPods-sqliteDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sqliteDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B70AA9DC78B9D9570F23428 /* Pods-sqliteDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sqliteDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-sqliteDemo/Pods-sqliteDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D87B2ADA1ED3E5E1007FB992 /* sqliteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sqliteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87B2ADE1ED3E5E1007FB992 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D87B2AE01ED3E5E1007FB992 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,18 +43,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				D87B2AF91ED3E63A007FB992 /* libsqlite3.0.tbd in Frameworks */,
+				290DD706BE8343927CE08616 /* libPods-sqliteDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23DC2763A382F75180DD9E00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A4388218809B1C19F54D405 /* Pods-sqliteDemo.debug.xcconfig */,
+				7B70AA9DC78B9D9570F23428 /* Pods-sqliteDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D87B2AD11ED3E5E1007FB992 = {
 			isa = PBXGroup;
 			children = (
 				D87B2ADC1ED3E5E1007FB992 /* sqliteDemo */,
 				D87B2ADB1ED3E5E1007FB992 /* Products */,
 				D87B2AF71ED3E63A007FB992 /* Frameworks */,
+				23DC2763A382F75180DD9E00 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				D87B2AF81ED3E63A007FB992 /* libsqlite3.0.tbd */,
+				580325613C93DB9331CC3FEE /* libPods-sqliteDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D87B2AF11ED3E5E1007FB992 /* Build configuration list for PBXNativeTarget "sqliteDemo" */;
 			buildPhases = (
+				F7B84CFBAFE1A0035EEC8DF7 /* [CP] Check Pods Manifest.lock */,
 				D87B2AD61ED3E5E1007FB992 /* Sources */,
 				D87B2AD71ED3E5E1007FB992 /* Frameworks */,
 				D87B2AD81ED3E5E1007FB992 /* Resources */,
+				D8E0FAA6B747AED660D42B19 /* [CP] Embed Pods Frameworks */,
+				D0AEF6CAB0785886F50C8FBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +180,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0AEF6CAB0785886F50C8FBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sqliteDemo/Pods-sqliteDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8E0FAA6B747AED660D42B19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sqliteDemo/Pods-sqliteDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7B84CFBAFE1A0035EEC8DF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D87B2AD61ED3E5E1007FB992 /* Sources */ = {
@@ -290,6 +357,7 @@
 		};
 		D87B2AF21ED3E5E1007FB992 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4388218809B1C19F54D405 /* Pods-sqliteDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = sqliteDemo/Info.plist;
@@ -301,6 +369,7 @@
 		};
 		D87B2AF31ED3E5E1007FB992 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B70AA9DC78B9D9570F23428 /* Pods-sqliteDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = sqliteDemo/Info.plist;
